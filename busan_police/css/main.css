@@ -1,0 +1,600 @@
+@charset "utf-8";
+
+main {
+  margin-top: 5px;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.banner {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .deco {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+}
+
+.banner .txt {
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.60);
+  font-family: 'JalnanGothic';
+  font-size: 3.7rem;
+  line-height: 1.4;
+  position: absolute;
+  z-index: 15;
+  right: 130px;
+  bottom: 40px;
+  color: #fff;
+  text-align: right;
+}
+
+.banner .txt span {
+  color: var(--point-color);
+}
+
+.banner .swiper-slide img {
+  width: 100vw;
+  height: 650px;
+}
+
+/* service */
+section.service {
+  margin-top: 80px;
+  width: 100%;
+  height: 300px;
+}
+
+section.service h2 {
+  width: 300px;
+  height: 55px;
+  font-family: 'JalnanGothic';
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--main-color);
+  text-align: center;
+  line-height: 60px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+section.service .all_swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section.service .all_swiper .swiper-button-next {
+  position: absolute;
+  right: -70px;
+  bottom: 0;
+}
+
+section.service .all_swiper .swiper-button-next::after {
+  display: none;
+}
+
+section.service .all_swiper .swiper-button-next i {
+  font-size: 50px;
+}
+
+section.service .all_swiper .swiper-button-prev {
+  position: absolute;
+  left: -70px;
+  bottom: 0;
+}
+
+section.service .all_swiper .swiper-button-prev i {
+  font-size: 50px;
+}
+
+section.service .all_swiper .swiper-button-prev::after {
+  display: none;
+}
+
+section.service ul {
+  width: 100%;
+  padding-top: 40px;
+}
+
+section.service ul li {
+  width: 160px;
+  height: 205px;
+}
+
+section.service ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.service ul li .img {
+  width: 130px;
+  height: 130px;
+  background: #E3EFFF;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.service ul li .img img {
+  transition: 0.5s;
+}
+
+section.service ul li:hover .img img {
+  transform: scale(1.1);
+}
+
+section.service ul li p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* introduce */
+section.introduce {
+  width: 100%;
+  height: 300px;
+}
+
+section.introduce .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.introduce .busan {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.introduce .busan .tit p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+section.introduce .busan .tit h2 {
+  font-family: 'JalnanGothic';
+  font-weight: 100;
+  font-size: 2.5rem;
+  padding-top: 5px;
+  color: var(--main-color);
+}
+
+section.introduce .busan ul.card {
+  width: 100%;
+  height: 63%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.introduce .busan ul.card li {
+  width: 330px;
+  height: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  background: #fff;
+  transition: 1s;
+}
+
+section.introduce .busan ul.card li:hover {
+  background: #E3EFFF;
+}
+
+section.introduce .busan ul.card li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.introduce .busan ul.card li .txt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section.introduce .busan ul.card li .txt h3 {
+  font-size: 1.5rem;
+}
+
+section.introduce .busan ul.card li .txt p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+section.introduce .busan ul.card li .txt p i {
+  animation: move 1s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(2px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+section.introduce .busan ul.card li .img {
+  margin-top: 35px;
+  transition: 0.5s;
+}
+
+section.introduce .busan ul.card li:hover .img {
+  transform: scale(1.1);
+}
+
+section.introduce .busan ul.card li:last-child .img {
+  margin-top: 55px;
+}
+
+section.introduce .commissioner {
+  width: 40%;
+  background: url(../img/commissioner_bg.png)center center;
+  border-radius: 50px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+section.introduce .commissioner .txt {
+  width: 65%;
+  height: 100%;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 0 10px 40px;
+}
+
+section.introduce .commissioner .txt .name p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section.introduce .commissioner .txt .name p:last-child {
+  padding-top: 5px;
+  font-family: 'JalnanGothic';
+  font-weight: 100;
+}
+
+section.introduce .commissioner .txt .name p:last-child span {
+  font-size: 2.5rem;
+}
+
+section.introduce .commissioner .txt>p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+section.introduce .commissioner .txt .btn {
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+section.introduce .commissioner .txt .btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--main-color);
+  color: #fff;
+  background: var(--main-color);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+section.introduce .commissioner .txt .btn:hover a {
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  color: var(--main-color);
+  background: #fff;
+  font-weight: bold;
+}
+
+section.introduce .commissioner .img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* contents */
+section.contents {
+  width: 100%;
+  height: 550px;
+  background: var(--main-color);
+}
+
+section.contents .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section.contents h2 {
+  font-family: 'JalnanGothic';
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+section.contents ul {
+  width: 100%;
+  display: flex;
+  height: 325px;
+}
+
+section.contents ul li {
+  width: 290px;
+  height: 280px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+section.contents ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.contents ul li a .img {
+  width: 270px;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+  border: 2px solid #555;
+}
+
+section.contents ul li a .img img {
+  transition: 0.5s;
+}
+
+section.contents ul li:hover a .img img {
+  transform: scale(1.1);
+}
+
+section.contents ul li a .txt {
+  width: 85%;
+  height: 33%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section.contents ul li a .txt h3 {
+  width: 100%;
+  font-size: 1.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.contents ul li a .txt p {
+  font-size: 1.1rem;
+}
+
+section.contents .all_swiper2 {
+  position: relative;
+  width: 100%;
+}
+
+section.contents .all_swiper2 .swiper-button-next2 {
+  position: absolute;
+  right: -70px;
+  top: 35%;
+  cursor: pointer;
+}
+
+section.contents .all_swiper2 .swiper-button-next2::after {
+  display: none;
+}
+
+section.contents .all_swiper2 .swiper-button-next2 i {
+  font-size: 50px;
+}
+
+section.contents .all_swiper2 .swiper-button-prev2 {
+  position: absolute;
+  left: -70px;
+  top: 35%;
+  cursor: pointer;
+}
+
+section.contents .all_swiper2 .swiper-button-prev2 i {
+  font-size: 50px;
+}
+
+section.contents .all_swiper2 .swiper-button-prev2::after {
+  display: none;
+}
+
+section.contents .all_swiper2 .swiper-pagination-bullet {
+  background: #fff;
+}
+
+section.contents .all_swiper2 .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 10px;
+  background: var(--point-color);
+}
+
+/* noice */
+section.nt_em {
+  width: 100%;
+  height: 300px;
+}
+
+section.nt_em .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.nt_em .container>h2 {
+  text-indent: -9999px;
+}
+
+section.nt_em article {
+  width: 45%;
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+section.nt_em article h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: 'JalnanGothic';
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+section.nt_em article h2 img {
+  margin-right: 10px;
+}
+
+section.nt_em article h2 i {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--main-color);
+  transition: 0.5s;
+  position: absolute;
+  right: 0;
+}
+
+section.nt_em article h2 i:hover {
+  transform: scale(1.1);
+}
+
+section.nt_em article ul {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.nt_em article ul li {
+  width: 100%;
+  height: 25%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  list-style: disc inside;
+}
+
+section.nt_em article ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.nt_em article ul li a p {
+  width: 75%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+
+section.nt_em article ul li:hover a p {
+  color: var(--main-color);
+  background: #ebf3ff;
+}
+
+section.nt_em article ul li:hover a p::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--main-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section.nt_em article ul li a span {
+  font-size: 1.0rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* family */
+section.family {
+  width: 100%;
+  height: 100px;
+}
+
+section.family .container {
+  height: 100%;
+  border: 1px solid var(--main-color);
+}
+
+section.family .container>h2 {
+  display: none;
+}
+
+.family_slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  flex: 0 0 auto;
+}
+
+section.family ul.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  transition-timing-function: linear;
+}
+
+section.family ul li {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,589 @@
+@charset "utf-8";
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #111111;
+  --btn-color: #393531;
+
+  --point-color: #FFA8BD;
+  --persona-color: #FFC0CF;
+}
+
+/* layout */
+.make {
+  font-size: 1rem;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+section {
+  padding: 100px 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* overview */
+section.overview .inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.overview .txt {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeleft 1s;
+}
+
+
+@keyframes fadeleft {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+section.overview .txt .top h1 {
+  font-size: 4rem;
+  color: var(--point-color);
+}
+
+section.overview .txt .top p {
+  font-size: 1.5rem;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+section.overview .txt .top a {
+  display: block;
+  width: 180px;
+  height: 45px;
+  background: var(--persona-color);
+  text-align: center;
+  line-height: 45px;
+  color: var(--black-color);
+  transition: 0.3s;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+section.overview .txt .top a:hover {
+  background: var(--btn-color);
+  color: var(--white-color);
+}
+
+section.overview .txt .top a i {
+  padding-left: 10px;
+  font-size: 1.3rem;
+  animation: clickme 1s infinite
+}
+
+@keyframes clickme {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+section.overview .txt .middle h2 {
+  position: relative;
+}
+
+section.overview .txt .middle h2::after {
+  content: '';
+  display: block;
+  background: var(--black-color);
+  width: 43%;
+  height: 2px;
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+section.overview .txt .middle ul.add {
+  padding-top: 15px;
+}
+
+section.overview .txt .middle ul.add li {
+  padding-top: 10px;
+  display: flex;
+}
+
+section.overview .txt .middle ul.add li div {
+  width: 150px;
+}
+
+section.overview .txt .bottom h2 {
+  position: relative;
+}
+
+section.overview .txt .bottom h2::after {
+  content: '';
+  display: block;
+  background: var(--black-color);
+  width: 74%;
+  height: 2px;
+  position: absolute;
+  left: 26%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.overview .txt .bottom p {
+  padding-top: 15px;
+  line-height: 1.7;
+}
+
+section.overview .img {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  animation: faderight 1s;
+}
+
+@keyframes faderight {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+section.overview .img .image-container {
+  width: 710px;
+  height: 400px;
+  position: absolute;
+  left: 43px;
+  top: 69px;
+  overflow: hidden;
+}
+
+section.overview .img .image-container ul {
+  width: 100%;
+  height: 100%;
+}
+
+section.overview .img .image-container ul li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+section.overview .img .image-container img {
+  width: 760px;
+  height: 400px;
+}
+
+section.overview .img .image-container img:nth-child(1) {
+  width: 740px;
+}
+
+/* point */
+section.point {
+  background: var(--persona-color);
+}
+
+section.point .inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.point .tit {
+  color: var(--white-color);
+}
+
+section.point .tit h2 {
+  font-size: 2.5rem;
+}
+
+section.point .tit p {
+  padding-top: 15px;
+  line-height: 1.4;
+}
+
+section.point ul {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.point ul.txt li {
+  width: 28%;
+  height: 100%;
+  background: var(--white-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  transition: 0.7s;
+}
+
+section.point ul.txt li:hover {
+  transform: translateY(-30px);
+}
+
+section.point ul.txt li .img {
+  width: 90%;
+  height: 230px;
+  background: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section.point ul.txt li .img img {
+  width: 100%;
+  transition: 0.6s;
+}
+
+section.point ul.txt li:hover .img img {
+  transform: scale(1.08);
+}
+
+section.point ul.txt li .notice {
+  width: 87%;
+  height: 170px;
+}
+
+section.point ul.txt li .notice h3 {
+  position: relative;
+}
+
+section.point ul.txt li .notice h3::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--point-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -7px;
+  transition: 0.8s;
+}
+
+section.point ul.txt li:hover .notice h3::after {
+  width: 100%;
+}
+
+section.point ul.txt li .notice h3 span {
+  color: var(--point-color);
+}
+
+section.point ul.txt li .notice p {
+  margin-top: 25px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* page */
+section.page .inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.page .tit h2 {
+  font-size: 8rem;
+  -webkit-text-stroke: 0.1px var(--point-color);
+  background-image: linear-gradient(0deg, #FFA8BD, #FFA8BD);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 0% 100%;
+  transition: 0.7s ease-in;
+  font-weight: bolder;
+}
+
+section.page.on .tit h2 {
+  background-size: 100% 100%;
+}
+
+section.page .tit p {
+  padding-top: 30px;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* main_page */
+section.main_page {
+  background: url(../img/cherry_blossoms/main_page.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+section.main_page.on {
+  opacity: 1;
+}
+
+section.main_page .modal,
+section.roding_page .modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgba(1, 1, 1, 0.5);
+  display: none;
+  opacity: 0;
+}
+
+section.main_page .modal.on,
+section.roding_page .modal.on {
+  display: block;
+  animation: fadein 0.5s 1;
+  opacity: 1;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+section.main_page .modal .m_inner,
+section.roding_page .modal .m_inner {
+  padding: 50px;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+section.main_page .modal .m_inner button,
+section.roding_page .modal .m_inner button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+section.main_page .modal .m_inner button i,
+section.roding_page .modal .m_inner button i {
+  font-size: 3.5rem;
+  color: var(--point-color);
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50px;
+  border: 10px solid #fff;
+}
+
+section.main_page .modal .m_inner .box,
+section.roding_page .modal .m_inner .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.main_page .modal .m_inner .box p,
+section.roding_page .modal .m_inner .box p {
+  margin-top: 25px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+section.main_page .e,
+section.roding_page .e {
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+section.main_page .e:hover,
+section.roding_page .e:hover {
+  transform: scale(1.07);
+  border: 2px solid var(--white-color);
+}
+
+section.main_page .kicboard {
+  width: 170px;
+  height: 219px;
+  position: absolute;
+  left: 10px;
+  top: 260px;
+  background: url(../img/cherry_blossoms/kicboard.png)no-repeat;
+}
+
+section.main_page .bird {
+  width: 140px;
+  height: 185px;
+  background: url(../img/cherry_blossoms/bird.png) no-repeat;
+  position: absolute;
+  left: 233px;
+  top: 20px;
+}
+
+section.main_page .coin {
+  width: 170px;
+  height: 217px;
+  background: url(../img/cherry_blossoms/coin.png) no-repeat;
+  position: absolute;
+  left: 245px;
+  bottom: 305px;
+}
+
+section.main_page .blossoms {
+  width: 323px;
+  height: 342px;
+  background: url(../img/cherry_blossoms/blossoms.png) no-repeat;
+  position: absolute;
+  left: 689px;
+  top: 100px;
+}
+
+section.main_page .lamp {
+  width: 72px;
+  height: 288px;
+  background: url(../img/cherry_blossoms/lamp.png) no-repeat;
+  position: absolute;
+  right: 763px;
+  top: 346px;
+}
+
+section.main_page .manager {
+  width: 150px;
+  height: 141px;
+  background: url(../img/cherry_blossoms/manager.png) no-repeat;
+  position: absolute;
+  right: 645px;
+  top: 24px;
+}
+
+section.main_page .next {
+  width: 222px;
+  height: 196px;
+  background: url(../img/cherry_blossoms/next.png) no-repeat;
+  position: absolute;
+  right: 399px;
+  top: 260px;
+}
+
+section.main_page .friend {
+  width: 566px;
+  height: 255px;
+  background: url(../img/cherry_blossoms/friend.png) no-repeat;
+  position: absolute;
+  right: 164px;
+  bottom: 25px;
+}
+
+/* roding_page */
+section.roding_page {
+  background: url(../img/cherry_blossoms/sub_page.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+section.roding_page.on {
+  opacity: 1;
+}
+
+section.roding_page .blossoms_roding {
+  width: 190px;
+  height: 436px;
+  background: url(../img/cherry_blossoms/blossoms_roding.png) no-repeat;
+  position: absolute;
+  left: 11px;
+  top: 38px;
+}
+
+section.roding_page .prev {
+  width: 241px;
+  height: 162px;
+  background: url(../img/cherry_blossoms/prev.png) no-repeat;
+  position: absolute;
+  left: 9px;
+  bottom: 30px;
+}
+
+section.roding_page .couple_front {
+  width: 442px;
+  height: 362px;
+  background: url(../img/cherry_blossoms/couple_front.png) no-repeat;
+  position: absolute;
+  left: 270px;
+  top: 202px;
+}
+
+section.roding_page .photographer {
+  width: 291px;
+  height: 320px;
+  background: url(../img/cherry_blossoms/photographer.png) no-repeat;
+  position: absolute;
+  right: 752px;
+  bottom: 57px;
+}
+
+section.roding_page .selfie {
+  width: 315px;
+  height: 178px;
+  background: url(../img/cherry_blossoms/selfie.png) no-repeat;
+  position: absolute;
+  right: 537px;
+  top: 225px;
+}
+
+section.roding_page .puppy {
+  width: 226px;
+  height: 201px;
+  background: url(../img/cherry_blossoms/puppy.png) no-repeat;
+  position: absolute;
+  right: 373px;
+  bottom: 205px;
+}
+
+section.roding_page .couple_back {
+  width: 226px;
+  height: 253px;
+  background: url(../img/cherry_blossoms/couple_back.png) no-repeat;
+  position: absolute;
+  right: 115px;
+  top: 194px;
+}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: url(../img/roding/background.png) no-repeat;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0);
+}
+
+.bg .left {
+  width: 1220px;
+  height: 646px;
+  background: url(../img/roding/left.png) no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: left 3.5s 1;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-1220px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.txt {
+  width: 800px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-45%, -50%);
+  display: flex;
+  flex-direction: column;
+  font-family: "Lilita One", sans-serif;
+  color: #FFA8BD;
+  font-weight: 100;
+}
+
+.txt p {
+  font-size: 60px;
+  display: inline;
+  margin-top: 70px;
+}
+
+.txt p:nth-child(1) {
+  align-self: start;
+  margin-top: 0;
+}
+
+.txt p:nth-child(2) {
+  margin-left: 210px;
+}
+
+.txt p:nth-child(3) {
+  margin-left: 435px;
+}
+
+.bg .right {
+  width: 1002px;
+  height: 767px;
+  background: url(../img/roding/right.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: right 2.5s 1;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(1002px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

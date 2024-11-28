@@ -1,0 +1,302 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #fff
+}
+
+img {
+  border: 0;
+}
+
+body {
+  font: 12px/1.6 arial;
+  color: #fff;
+  overflow-y: hidden;
+  /* 스크롤을 숨김 */
+}
+
+/* 상단 */
+h1 {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 10;
+}
+
+h1 img {
+  width: 300px;
+}
+
+ul#sns {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 10;
+  display: flex;
+}
+
+ul#sns li {
+  margin-left: 30px;
+}
+
+ul#sns li i {
+  font-size: 25px;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+ul#sns li i:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+ul#menu {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 10;
+}
+
+ul#menu li a {
+  width: 200px;
+  height: 60px;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+  font-family: 'Righteous', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-top: 1px solid #111;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+ul#menu li:hover a,
+ul#menu li.on a {
+  opacity: 1;
+  font-size: 24px;
+}
+
+ul#menu li:nth-child(1):hover a {
+  color: #E5E5E6;
+  border-color: #E5E5E6;
+}
+
+ul#menu li:nth-child(2):hover a {
+  color: #44B0CB;
+  border-color: #44B0CB
+}
+
+ul#menu li:nth-child(3):hover a {
+  color: #EF9108;
+  border-color: #EF9108;
+}
+
+ul#menu li:nth-child(4):hover a {
+  color: #364BB5;
+  border-color: #364BB5;
+}
+
+ul#menu li:nth-child(1).on a {
+  color: #E5E5E6;
+  border-color: #E5E5E6;
+}
+
+ul#menu li:nth-child(2).on a {
+  color: #44B0CB;
+  border-color: #44B0CB
+}
+
+ul#menu li:nth-child(3).on a {
+  color: #EF9108;
+  border-color: #EF9108;
+}
+
+ul#menu li:nth-child(4).on a {
+  color: #364BB5;
+  border-color: #364BB5;
+}
+
+/* layout */
+#wrap {}
+
+#wrap section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  /* 이미지를 고정시키기 위함 */
+  overflow: hidden;
+}
+
+#wrap section img.main {
+  position: absolute;
+  right: 200px;
+  top: 85px;
+  animation: fluto linear 2s infinite;
+}
+
+@keyframes fluto {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#wrap section article {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 300px;
+  z-index: 9;
+}
+
+#wrap section video {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#wrap section article h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+#wrap section article p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-top: 20px;
+  font-family: 'S-CoreDream-3Light';
+  font-weight: 100;
+}
+
+#wrap section:nth-child(1) article h2 {
+  color: #E5E5E6;
+}
+
+#wrap section:nth-child(1) article p {
+  color: #ffec6a;
+}
+
+#wrap section:nth-child(2) article h2 {
+  color: #44B0CB;
+}
+
+#wrap section:nth-child(2) article p {
+  color: #ffec6a;
+}
+
+#wrap section:nth-child(3) article h2 {
+  color: #EF9108;
+}
+
+#wrap section:nth-child(3) article p {
+  color: #ffec6a;
+}
+
+#wrap section:nth-child(4) article h2 {
+  color: #364BB5;
+}
+
+#wrap section:nth-child(4) article p {
+  color: #ffec6a;
+}
+
+/* 첫번째 박스 이미지  */
+.m11 {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+.m22 {
+  position: absolute;
+  bottom: -130px;
+  left: 770px;
+}
+
+/* 두번째 박스 이미지 */
+.e33 {
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  animation: fluto linear 4s infinite;
+}
+
+.e44 {
+  position: absolute;
+  right: 700px;
+  bottom: 30px;
+  animation: fluto linear 4s infinite;
+}
+
+/* 세번째 박스 이미지 */
+.v66 {
+  position: absolute;
+  bottom: -200px;
+  right: 200px;
+}
+
+.v77 {
+  position: absolute;
+  top: 250px;
+  right: -70px;
+}
+
+/* 네번째 박스 이미지 */
+.p41 {
+  position: absolute;
+  bottom: -130px;
+  right: -50px;
+  opacity: 0.5;
+}
+
+.p42 {
+  position: absolute;
+  bottom: -300px;
+  right: -200px;
+  opacity: 0.7;
+}

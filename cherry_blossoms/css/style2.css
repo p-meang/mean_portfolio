@@ -1,0 +1,618 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: url(../img/2page/background.png) center center;
+}
+
+/* back */
+.blossomes_top2 {
+  width: 448px;
+  height: 417px;
+  position: absolute;
+  right: 200px;
+  top: -80px;
+  background: url(../img/2page/blossoms_top2.png) no-repeat;
+}
+
+.tree_m {
+  width: 412px;
+  height: 482px;
+  position: absolute;
+  right: 390px;
+  top: -80px;
+  background: url(../img/2page/tree_m.png) no-repeat;
+}
+
+.blossomes_top1 {
+  width: 450px;
+  height: 419px;
+  position: absolute;
+  right: 590px;
+  top: -80px;
+  background: url(../img/2page/blossoms_top1.png) no-repeat;
+}
+
+.tree_s {
+  width: 425px;
+  height: 362px;
+  position: absolute;
+  right: 765px;
+  top: -55px;
+  background: url(../img/2page/tree_s.png) no-repeat;
+}
+
+.puppy {
+  width: 105px;
+  height: 75px;
+  position: absolute;
+  right: -105px;
+  top: 250px;
+  animation: run2 10s linear infinite;
+}
+
+.puppy .run {
+  width: 100%;
+  height: 100%;
+  background: url(../img/2page/run1.png) no-repeat bottom;
+  animation: run 0.7s infinite;
+}
+
+@keyframes run {
+  0% {
+    background: url(../img/2page/run1.png) bottom no-repeat;
+  }
+
+  25% {
+    background: url(../img/2page/run2.png) bottom no-repeat;
+  }
+
+  50% {
+    background: url(../img/2page/run3.png) bottom no-repeat;
+  }
+
+  75% {
+    background: url(../img/2page/run2.png) bottom no-repeat;
+  }
+
+  100% {
+    background: url(../img/2page/run1.png) bottom no-repeat;
+  }
+}
+
+.owner {
+  width: 220px;
+  height: 159px;
+  position: absolute;
+  right: -220px;
+  top: 165px;
+  background: url(../img/2page/puppy_owner_automatic.png) no-repeat;
+  animation: run2 10s 0.5s linear infinite;
+}
+
+@keyframes run2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+
+/* middle_right */
+.blossoms_right_top {
+  width: 596px;
+  height: 651px;
+  position: absolute;
+  top: -100px;
+  right: -210px;
+  background: url(../img/2page/blossoms_right_top.png) no-repeat;
+}
+
+.couple_back {
+  width: 210px;
+  height: 213px;
+  position: absolute;
+  right: 140px;
+  top: 230px;
+  background: url(../img/2page/couple_back.png);
+
+}
+
+.couple_back:hover::after {
+  content: '';
+  display: block;
+  width: 160px;
+  height: 45px;
+  position: absolute;
+  right: -85px;
+  top: -52px;
+  background: url(../img/2page/couple_back_hover.png) no-repeat;
+}
+
+.bush {
+  width: 205px;
+  height: 125px;
+  position: absolute;
+  right: -35px;
+  top: 350px;
+  background: url(../img/2page/bush_right.png) no-repeat;
+}
+
+.bicycle_child {
+  width: 183px;
+  height: 223px;
+  position: absolute;
+  left: 600px;
+  top: 110px;
+  background: url(../img/2page/bicycle_child.png) no-repeat;
+  animation: bicycle 11s infinite;
+}
+
+@keyframes bicycle {
+  0% {
+    transform: translate(0px, 0px) scale(0.6);
+  }
+
+  10% {
+    transform: translate(320px, 30px) scale(0.8);
+  }
+
+  100% {
+    transform: translate(3500px, 1500px) scale(1);
+  }
+}
+
+.picnic {
+  width: 547px;
+  height: 364px;
+  background: url(../img/2page/picnic.png);
+  position: absolute;
+  left: 635px;
+  top: 215px;
+  transform: scale(0.9);
+}
+
+.selfie_all {
+  width: 322px;
+  height: 360px;
+  position: absolute;
+  right: 560px;
+  top: 230px;
+  cursor: pointer;
+}
+
+.selfie_all .selfie_click {
+  width: 202px;
+  height: 99px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background: url(../img/2page/selfie_click.png);
+  display: none;
+}
+
+.selfie_all .selfie_click.on {
+  display: block;
+}
+
+.selfie_all .selfie {
+  width: 322px;
+  height: 360px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/2page/selfie.png);
+
+}
+
+.selfie_all .selfie_arm_left {
+  width: 49px;
+  height: 85px;
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  background: url(../img/2page/selfie_arm_left.png);
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-12deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* right bottom */
+.bench_puppy {
+  width: 348px;
+  height: 347px;
+  position: absolute;
+  right: 360px;
+  bottom: 110px;
+}
+
+.bench_puppy .bench {
+  width: 348px;
+  height: 269px;
+  background: url(../img/2page/bench.png) no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.bench_puppy .bag {
+  width: 125px;
+  height: 160px;
+  background: url(../img/2page/bag.png);
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+.bench_puppy .puppy2 {
+  width: 196px;
+  height: 130px;
+  position: absolute;
+  right: 42px;
+  bottom: 130px;
+  z-index: 10;
+}
+
+.bench_puppy .puppy2:hover::after {
+  content: '';
+  display: block;
+  width: 84px;
+  height: 59px;
+  background: url(../img/2page/face_hover.png);
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.bench_puppy .puppy2 .tail {
+  width: 68px;
+  height: 68px;
+  background: url(../img/2page/tail.png) no-repeat;
+  position: absolute;
+
+}
+
+.bench_puppy .puppy2:hover .tail {
+  animation: tail 0.5s infinite;
+}
+
+@keyframes tail {
+  0% {
+    background: url(../img/2page/tail.png) no-repeat;
+  }
+
+  50% {
+    background: url(../img/2page/tail_auto.png) no-repeat;
+  }
+
+  100% {
+    background: url(../img/2page/tail.png) no-repeat;
+  }
+}
+
+.bench_puppy .puppy2 .body {
+  width: 196px;
+  height: 130px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../img/2page/body.png);
+}
+
+.blossoms_right_bottom {
+  width: 1255px;
+  height: 1279px;
+  background: url(../img/2page/blossoms_right_bottom.png) no-repeat;
+  position: absolute;
+  right: -650px;
+  bottom: -805px;
+}
+
+/* left */
+.blossoms_left {
+  width: 890px;
+  height: 1293px;
+  background: url(../img/2page/blossoms_left.png) no-repeat;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  cursor: pointer;
+}
+
+.bush_bottom {
+  width: 290px;
+  height: 252px;
+  background: url(../img/2page/bush_bottom.png) no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -75px;
+  cursor: pointer;
+  padding-left: 45px;
+  line-height: 220px;
+  font-size: 35px;
+  font-family: 'ONE-Mobile-POP';
+  color: #fff;
+}
+
+.bush_bottom:hover {
+  animation: cute 0.5s linear infinite;
+}
+
+@keyframes cute {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.couple_bottom {
+  width: 457px;
+  height: 652px;
+  position: absolute;
+  left: 250px;
+  bottom: 40px;
+}
+
+.couple_bottom .boy {
+  width: 270px;
+  height: 652px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.couple_bottom .boy .hand {
+  width: 60px;
+  height: 80px;
+  background: url(../img/2page/hand_boy.png);
+  position: absolute;
+  right: 0;
+  top: 33px;
+}
+
+.couple_bottom .boy:hover .hand {
+  animation: hand 0.7s infinite;
+}
+
+@keyframes hand {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-10deg) translate(-5px, -3px);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.couple_bottom .boy .body {
+  width: 100%;
+  height: 100%;
+  background: url(../img/2page/couple_boy.png) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.couple_bottom .girl {
+  width: 266px;
+  height: 593px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.couple_bottom .girl .hand {
+  width: 64px;
+  height: 74px;
+  background: url(../img/2page/hand_girl.png);
+  position: absolute;
+  right: -7px;
+  top: 50px;
+}
+
+.couple_bottom .girl:hover .hand {
+  animation: hand 0.7s infinite;
+}
+
+.couple_bottom .girl .body {
+  width: 100%;
+  height: 100%;
+  background: url(../img/2page/couple_girl.png) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.leaf_effect {
+  width: 858px;
+  height: 847px;
+  background: url(../img/2page/blossoms_leaf.png);
+  position: absolute;
+  left: 0;
+  top: -100px;
+  display: none;
+}
+
+.leaf_effect.on {
+  display: block;
+  animation: drop 3s 1;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+}
+
+.photographer {
+  width: 470px;
+  height: 365px;
+  background: url(../img/2page/photographer.png);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-30%);
+  bottom: 0;
+  cursor: pointer;
+}
+
+.photographer_click {
+  width: 556px;
+  height: 471px;
+  background: url(../img/2page/photographer_click.png);
+  position: absolute;
+  bottom: 120px;
+  left: 360px;
+  display: none;
+}
+
+.photographer_click.on {
+  display: block;
+  animation: shutter 1s 1;
+  opacity: 0;
+}
+
+@keyframes shutter {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.button {
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+  border: 3px solid #FFA8BD;
+  background: #fff;
+  border-radius: 10px;
+  font-family: 'ONE-Mobile-POP';
+  font-size: 30px;
+  line-height: 70px;
+  cursor: pointer;
+  color: #FFA8BD;
+  z-index: -1;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.button:hover {
+  background: #FFA8BD;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.button.on {
+  animation: jump 1.5s 1;
+  z-index: 1;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+
+  50% {
+    transform: translateY(-180px);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    z-index: 10;
+  }
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+}

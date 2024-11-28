@@ -1,0 +1,14 @@
+<svg width="423" height="202" viewBox="0 0 423 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="front">
+<path id="Ellipse 1" d="M392.827 1.80669C395.805 8.94437 395.684 16.8281 392.827 25.1653C385.489 44.8976 365.228 63.5514 356.015 70.4117C325.863 94.8272 280.22 118.905 226.212 136.871C118.081 172.841 17.3622 170.689 1.25049 132.064" stroke="white"/>
+<g id="sparkle" clip-path="url(#clip0_150_35)">
+<rect width="34" height="54" transform="translate(365 15)" fill="#393531"/>
+<path id="Vector" d="M400 41.8368C383.672 41.8368 382 50.7175 382 69C382 50.7175 380.328 41.8368 364 41.8368C380.328 41.8368 382 33.2825 382 15C382 33.2825 383.672 41.8368 400 41.8368Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_150_35">
+<rect width="34" height="54" fill="white" transform="translate(365 15)"/>
+</clipPath>
+</defs>
+</svg>
