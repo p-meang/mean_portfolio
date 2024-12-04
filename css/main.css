@@ -641,15 +641,15 @@ section.about.on .skills ul li:nth-child(4) .bar .gauge {
 }
 
 section.about.on .skills ul li:nth-child(5) .bar .gauge {
-  width: 90%;
+  width: 95%;
 }
 
 section.about.on .skills ul li:nth-child(6) .bar .gauge {
-  width: 80%;
+  width: 90%;
 }
 
 section.about.on .skills ul li:nth-child(7) .bar .gauge {
-  width: 80%;
+  width: 85%;
 }
 
 /* contents */
