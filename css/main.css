@@ -629,27 +629,27 @@ section.about.on .skills ul li:nth-child(1) .bar .gauge {
 }
 
 section.about.on .skills ul li:nth-child(2) .bar .gauge {
-  width: 90%;
+  width: 80%;
 }
 
 section.about.on .skills ul li:nth-child(3) .bar .gauge {
-  width: 85%;
+  width: 70%;
 }
 
 section.about.on .skills ul li:nth-child(4) .bar .gauge {
-  width: 85%;
-}
-
-section.about.on .skills ul li:nth-child(5) .bar .gauge {
   width: 90%;
 }
 
+section.about.on .skills ul li:nth-child(5) .bar .gauge {
+  width: 85%;
+}
+
 section.about.on .skills ul li:nth-child(6) .bar .gauge {
-  width: 80%;
+  width: 70%;
 }
 
 section.about.on .skills ul li:nth-child(7) .bar .gauge {
-  width: 80%;
+  width: 75%;
 }
 
 /* contents */
