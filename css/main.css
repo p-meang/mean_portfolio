@@ -245,7 +245,7 @@ section.home .tit img.deco {
 
 section.home .tit img.sparkle {
   position: absolute;
-  right: 30%;
+  right: 29%;
   top: 39%;
 }
 
@@ -649,7 +649,7 @@ section.about.on .skills ul li:nth-child(6) .bar .gauge {
 }
 
 section.about.on .skills ul li:nth-child(7) .bar .gauge {
-  width: 75%;
+  width: 80%;
 }
 
 /* contents */
